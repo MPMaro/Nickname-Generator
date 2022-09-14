@@ -50,5 +50,5 @@ while loop:
         else: 
             print("Nickname", nnameToRemove, "not found in list!")
     elif slc == 6:
-      print("Bye-Bye")
+      print("Exited")
       loop = False 
