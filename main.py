@@ -37,20 +37,20 @@ while loop:
             print(firstname, i, lastname)
             
     elif slc == 4:
-        nnameToAdd = input("Please enter a new nickname : ")
-        if nnameToAdd in nicknames:
-            print(nnameToAdd, " already on the list!")
+        addname = input("Please enter a new nickname : ")
+        if addname in nicknames:
+            print(addname, " already on the list!")
         else:
-            nicknames.append(nnameToAdd)
-            print("Nickname", nnameToAdd, "added!")
+            nicknames.append(addname)
+            print("Nickname", addname, "added!")
             
     elif slc == 5:
-        nnameToRemove = input("Please enter a nickname to remove: ")
-        if nnameToRemove in nicknames:
-            nicknames.remove(nnameToRemove)
-            print(nnameToRemove, "removed from the list!")
+        remove_nickname = input("Please enter a nickname to remove: ")
+        if remove_nickname in nicknames:
+            nicknames.remove(remove_nickname)
+            print(remove_nickname, "removed from the list!")
         else: 
-            print("Nickname", nnameToRemove, "not found in list!")
+            print("Nickname", remove_nickname, "not found in list!")
             
     elif slc == 6:
       print("Exited")
